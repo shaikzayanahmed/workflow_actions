@@ -1,13 +1,10 @@
-name: cicd
-
+name: cicd  # This is your workflow name
 on:
   push:
     branches: [main]
-
-job:
+jobs:  # 🔥 FIX: Changed from "job" → "jobs" (plural)
   demo:
     runs-on: ubuntu-latest
-
     steps:
-      -name: Greetings
-      run: echo "hello world"
+      - name: Greetings
+        run: echo "hello world"
